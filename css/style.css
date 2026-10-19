@@ -1,0 +1,143 @@
+@font-face {
+  
+  font-family: 'Regular Show';
+  src: url(../fonts/IceCreamPartySolid.ttf);
+  
+  font-weight: normal;
+  font-size: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+p, a, li, strong, label, td {
+
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+h2, h3, h4, h5, h6 {
+  
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 1000;
+
+}
+.th-flex {
+
+  font-family: 'Roboto Flex', sans-serif;
+
+  font-weight: 700;
+
+}
+
+#regular-footer {
+  
+  font-family: 'Regular Show';
+  
+  font-weight: 100;
+  
+}
+
+header h1 {
+
+  font-family: Regular Show;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#inicio {
+  scroll-margin-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: violet;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+a:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+a:active {
+  transform: scale(0.9);
+}
+
+header {
+  display: flex;
+  position: sticky;
+  background: white;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 0 5%;
+}
+header span {
+  color: blueviolet;
+}
+
+nav {
+  display: flex;
+  align-self: center;
+}
+
+main {
+  display: flex;
+  padding: 20px 2%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+article img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  gap: 30px;
+
+  background: darkmagenta;
+  color: white;
+
+  height: 50%;
+  width: 50%;
+  padding: 30px;
+  border-radius: 30px;
+
+  position: sticky;
+  top: 240px;
+
+  align-items: center;
+  align-self: flex-start;
+
+  flex: 0 0 45%;
+  width: 45%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background: linear-gradient(45deg, purple, black);
+  text-align: center;
+  justify-content: center;
+  color: white;
+}

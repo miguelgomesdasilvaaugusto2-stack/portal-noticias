@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Show News - Cadastro</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Regular Show News - <span>Cadastro</span></h1>
+
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="#inicio">Cadastro</a>
+        <a href="noticia.html">Notícias</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section>
+        <h3>Cadastre-se para receber notícias de última hora</h3>
+
+        <article style="text-align: center">
+          <h5>Insira suas informações</h5>
+
+          <form
+            action="index.html"
+            onsubmit="
+              alert('Cadastrado!');
+              return true;
+            "
+          >
+          <!-- Return true para poder trocar a página, ou sem ele já ia direto. -->
+           
+            <label for="name" class="data_label">
+              Nome:
+
+              <input
+                type="text"
+                id="name"
+                class="data"
+                placeholder="Digite seu nome"
+                maxlength="100"
+                required
+              />
+            </label>
+
+            <label for="email" class="data_label">
+              Email:
+
+              <input
+                type="email"
+                id="email"
+                class="data"
+                placeholder="Digite seu email"
+                maxlength="100"
+                required
+              />
+            </label>
+
+            <label for="password" class="data_label">
+              Senha:
+
+              <input
+                type="password"
+                id="password"
+                class="data"
+                placeholder="Digite sua senha:"
+                maxlength="255"
+                required
+              />
+            </label>
+
+            <label for="color">
+              Cor favorita:
+
+              <input type="color" id="color" class="color" required />
+            </label>
+
+            <button type="submit" id="form-button">Enviar</button>
+          </form>
+        </article>
+
+        <article>
+          <img
+            src="../img/regular_show.jpg"
+            alt="Foto de alguns dos integrantes da série"
+            width="100%"
+            height="100%"
+          />
+        </article>
+      </section>
+
+      <aside>
+        <h2>Vantagens de ser cadastrado:</h2>
+
+        <table border="1px">
+          <thead>
+            <th class="th-flex">Tem cadastro?</th>
+            <th class="th-flex">Notificações</th>
+            <th class="th-flex">Pode enviar comentários</th>
+            <th class="th-flex">Pode filtrar temas favoritos</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Tem cadastro✔️</td>
+              <td>Sim</td>
+              <td>Sim</td>
+              <td>Sim</td>
+            </tr>
+
+            <tr>
+              <td>Não tem cadastro❌</td>
+              <td>Não</td>
+              <td>Não</td>
+              <td>Não</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Se increva já para receber os benefícios!</p>
+      </aside>
+    </main>
+
+    <footer>
+      <h2>Regular Show News</h2>
+      <strong>&copy;Todos os direitos reservados 2026</strong>
+      <a href="emprego.html">Trabalhe no parque</a>
+    </footer>
+  </body>
+</html>
