@@ -77,13 +77,16 @@ a:active {
 
 header {
   display: flex;
-  position: sticky;
-  background: white;
-  top: 0;
-  left: 0;
   justify-content: space-between;
+  
+  background: white;
   border-bottom: 1px solid black;
   padding: 0 5%;
+  
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 header span {
   color: blueviolet;
