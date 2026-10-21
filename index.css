@@ -1,0 +1,14 @@
+section h3,
+article h4 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+ul {
+  font-size: 20px;
+}

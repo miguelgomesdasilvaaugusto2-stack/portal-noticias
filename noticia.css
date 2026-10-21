@@ -1,0 +1,20 @@
+section h3, article h4 {
+
+    text-align: center;
+
+}
+
+section {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+article img{
+
+    display: flex;
+    justify-self: center;
+
+}

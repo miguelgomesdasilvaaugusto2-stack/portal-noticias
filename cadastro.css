@@ -1,0 +1,92 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  text-align: center;
+}
+
+article img {
+  border: 10px solid darkorchid;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-items: center;
+}
+
+.data {
+  background: darkmagenta;
+  color: white;
+  border-radius: 50px;
+  padding: 5px;
+
+  border: 2px solid rgb(240, 159, 240);
+  outline-color: 3px solid transparent;
+  outline-offset: 0px;
+
+  transition:
+    outline-color 0.5s ease,
+    outline-offset 0.3s ease;
+}
+.data:active {
+  outline-offset: 15px;
+}
+.data:focus {
+  outline-color: magenta;
+}
+.data::placeholder {
+  color: white;
+}
+
+.data_label {
+  font-weight: bold;
+}
+.data_label:active + .login {
+  outline-offset: 5px;
+}
+
+.color {
+  background: transparent;
+  padding: 0px;
+  border: 0px;
+
+  border-radius: 150px;
+
+  transition: transform 0.4s ease;
+}
+.color:hover {
+  transform: translateY(-2px);
+}
+.color:active {
+  transform: scale(0.9);
+}
+
+#form-button {
+  background: darkmagenta;
+  color: white;
+  padding: 15px;
+  border: 0px;
+  width: 20%;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+
+  transition: transform 0.4s ease;
+}
+#form-button:hover {
+  transform: translateY(-4px);
+}
+#form-button:active {
+  transform: scale(0.75);
+}
+
+@media screen and (max-width: 750px) {
+  #form-button {
+    width: 30%;
+  }
+}
